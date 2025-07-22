@@ -1,1 +1,732 @@
+👉🖥JAVA PROGRAMMING CHEETSHEET
 
+👉🖥INTRODUCTION
+
+Java is high level pure object oriented programming language devloped by James gosling in
+
+1996
+
+It is genral purpose and platform independent language
+
+👉🖥BASIC SYNTAX
+
+class classname
+
+{
+
+public static void main(String args[])
+
+{
+
+Codes
+
+}
+
+}
+
+👉🖥COMMENTS
+
+single line. \\Comments single line
+
+Multiline. \* comment multiline*\
+
+👉🖥INPUT/OUTPUT
+
+When you use the input statement then we have
+import Java.util.Scanner module
+
+Import java.io.Console module
+
+System.out.print("Output statement");
+
+Scanner object name=new Scanner(System.in);
+
+Varname=object name.nextDatatype();
+
+Console object name=System.console();
+
+Varname=object name.readdatatype();
+
+readLine(). String value
+
+readInt(). Integer value
+
+readFloat(). Float value
+
+readDouble() Double value
+
+readBoolean() Boolean value
+
+nextInt(); Int value
+
+nextLine(); String value
+
+nextDouble(); Double value
+
+next float(); Float value
+
+next Boolean(). Boolean value
+
+👉🖥DATATYPES
+
+int float char double string array
+
+👉🖥 KEYWORDS
+
+There are mainly 50 keywords in java
+
+👉🖥SYNTAX
+
+Datatype Varname=value; variable declaration and initialisation
+
+Datatype arrayname []=new datatype[size]; array declaration and initialisation
+
+String stringname =new String("values");
+
+String stringname="value"; string declaration and initialisation
+
+Return type functionname(formal argu)
+
+{
+
+Code of block
+
+}
+
+Function. Definition
+
+Functionname(actual argu);
+
+Function calling
+
+👉🖥CONDITIONAL STATEMENT
+
+1....if(condition). If statement
+
+{Statement}
+
+2...if(condition). If else statement
+{Statements}
+
+else
+
+{Statements}
+
+3....if(condition). If else if statement
+
+{Statements}
+
+else if(condition)
+
+{Statements}
+
+else if(condition)
+
+{Statements}
+
+4.....if(condition1). Neated if statement
+
+{
+
+if(condition2)
+
+{Statements}
+
+else
+
+{Statements}
+
+}
+
+else
+
+{
+
+{
+
+if(condition2)
+
+{Statements}
+
+else
+
+{Statements}
+
+}
+
+👉🖥LOOPING STATEMENT
+
+1...while(condition)
+
+{
+
+Statements
+
+}
+
+2...do
+
+{
+
+Statements
+
+}while(condition);
+
+3...for(initialisation; condition; incre/decre)
+
+{
+
+Statements
+
+}
+
+For each loop used for printing array elements
+
+4...for(Datatype Varname : arrayname)
+
+{
+
+Statements
+
+}
+👉🖥SWITCH CASE
+switch(expression)
+{
+Case 1:
+Statements
+Break;
+Case 2:
+Statement
+Break;
+Default:
+Statement
+Break;
+}
+👉🖥 OPERATORS
+1... Arithmetic operators
+(+). Addition
+(-). Subtraction
+(*). Multiplication
+(/). Division
+(%). Modulus
+2... Relational operators
+(>). Greater than
+(<). Less than
+(>=). Greater than equal to
+(<=). Less than equal to
+(==). Equal to equal to
+(!=). Not equal to
+3...Logical operators
+(&&). Logical and
+(||). Logical or
+(!). Logical not
+4...Increment/Decrement operators
+(++). Increment
+(--). Decrement
+5...Ternary operators
+(?). Question mark
+(:). Colon
+6...Assignment operators
+(=). Equal to
+
+👉🖥 OBJECT ORIENTED PROGRAMMING
+
+👉🖥CLASS AND OBJECT
+
+Class classname class declaration
+
+{
+
+Datamembers
+
+Properties or methods
+
+}
+
+Classname objectname=new classname(); object declaration
+
+Object name.functionname(); calling function
+
+Objectname.datamember name. Datameber accessing
+
+👉🖥 ENCAPSULATION
+
+Bind multiple datamembers and method in single unit
+
+Class classname
+
+{
+
+Datamembers
+
+Memberfunctionname()
+
+{
+
+}
+
+}
+
+👉🖥 INHERITANCE
+
+Creating new class from existing class
+
+Extend keyword is used to provide inheritance
+
+Class classname. Parent class
+
+{
+
+Properties
+
+}
+
+Class classname1 extends classname. Child class
+
+{
+
+Properties
+
+}
+
+There are mainly 4 types of inheritance in Java
+
+Single
+
+Multilevel
+
+Hierarchical
+
+Hybrid
+
+Hybrid inheritance not support directly in java
+
+Multiple inheritance not support in Java we have to use the interface for implementing multiple
+
+inheritance
+
+👉🖥DATA ABSTRACTION
+
+Hiding low level details from general users by using some section
+1..Public
+
+2..Private
+
+3..Protected
+
+Sectionname class classname --- Class
+
+{
+
+Sectionname Varname; ---variable
+
+}
+
+👉🖥 POLYMORPHISM
+
+Showing different behaviour according to situation
+
+There are mainly 2 types of Polymorphism
+
+1..Compile time
+
+2..Run time
+
+In Polymorphism inheritance is present
+
+👉🖥Function overloading/Method overloading
+
+Single class content multiple same name function with different no of parameters
+
+Class classname
+
+{
+
+Memberfunctionname()
+
+{
+
+It not have arguments
+
+}
+
+Memberfunctionname (argu)
+
+{
+
+It have arguments
+
+}
+
+}
+
+👉🖥SUPER KEYWORD AND METHOD
+
+The super keyword is used for differentiating two different class variable which have same name
+
+Super method is used for accessing constructor of base class using derived class object
+
+Super keyword is used to call variable ,method and constructor of parent class
+
+👉🖥 Function overriding
+
+Multiple class content same name function
+
+Class classname
+
+{
+
+Memberfunctionname ()
+
+{
+
+}
+
+}
+
+Class classname1 extends classname
+
+{
+
+Memberfunctionname()
+
+{
+
+}
+
+}
+
+👉🖥CONSTRUCTOR
+
+The special type of function which name is similar to class name and which execute at the time
+
+of object creation
+
+There are mainly 2 types of constructor
+
+1. Default constructor
+
+It not contain any arguments
+
+Syntax
+
+Classname objectname=new classname();
+
+2. Parameterised constructor
+
+It consists of arguments
+
+Classname objectname=new classname (datatype varname);
+
+👉🖥CONSTRUCTOR OVERLOADING
+
+The same name constructor which have different no of arguments is called as constructor
+
+overloading
+
+Syntax
+
+Class classname
+
+{
+
+Classname()
+
+{
+
+Default constructor
+
+}
+
+Classname (Datatype varname)
+
+{
+
+Parameterised constructor
+
+}
+
+}
+
+👉🖥THIS KEYWORD
+
+This keyword is used to provide value of local variable to instance variable in program
+
+This keyword always used in constructor for differentiating local and instance variable
+
+Syntax
+
+This.instance variable=local varname;
+
+👉🖥THIS METHOD
+
+This keyword is used to declare this method
+
+It is special type of method which used to class multiple constructor by using single object
+
+This () method is written at first line in constructor
+
+Syntax
+
+Class classname
+
+{
+
+Classname()
+
+{
+
+Default constructor
+
+}
+Classname(Datatype varname)
+
+{
+
+this()
+
+Parameterised constructor
+
+}
+
+}
+
+👉🖥FINALIZE METHOD
+
+The special type of method which deallocated memory occupied by constructor and object in
+
+program
+
+Object name=null;
+
+statement deallocated memory occupied by constructor and object
+
+👉🖥USES OF FINAL KEYWORD
+
+Final variable can not change value
+
+Syntax
+
+Final datatype varname =value;
+
+Final method can not override by child class
+
+Syntax
+
+Final returntype method name()
+
+{
+
+}
+
+Final class can not extends other class
+
+Syntax
+
+Final class classname
+
+{
+
+}
+
+👉🖥 Exception handling
+
+1...try
+
+2...catch
+
+3...throw
+
+4...finally
+
+5...throws
+
+Class classname
+
+{
+
+try
+
+{Exception code}
+
+Catch
+
+{Exception}
+
+}
+
+👉🖥 CREATING USER DEFINE PACKAGE
+Package creation statements syntax
+
+Syntax
+
+Package packagenane.projectname;
+
+Eg
+
+Package project.musicplayer;
+
+Compiling syntax of package code
+
+Javac -d . Programname.java
+
+Accessing package
+
+1. Import that package in program
+
+Import package name
+
+2. Object creation of that class inside package
+
+Classname objname=new classname();
+
+3. Calling methods inside package using object
+
+objname.methodname();
+
+Rules of packages
+
+1. Package statement is must be a first statement of program
+
+2. Class and method inside packages must be a public
+
+3. Packages must not contain main method
+
+👉🖥ABSTRACTION
+
+CONCRETE CLASS
+
+The class which contains declaration and definition of all methods
+
+It is simple class
+
+ABSTRACT METHODS
+
+The special type of method which are declare inside parent class and define inside child class is
+
+called as abstract methods
+
+ABSTRACT CLASS
+
+The special type of class which contains at least one abstract method is called as abstract class
+
+PURE ABSTRACT CLASS
+
+The special type of class which contains all abstract methods is called as pure abstract class
+
+👉🖥INTERFACE
+
+It is like a class which contain multiple method declaration
+
+Syntax
+
+Interface interfacename
+
+{
+
+Method declaration
+
+}
+
+Implementation of interface
+
+Class classname Implements interfacename;
+
+The methods inside interface are public and abstract
+
+The variable inside interface are public static and final
+Open command line(cmd)
+
+javac program name.java
+
+For compilation
+
+java program name
+
+For interpretation and execution
+
+👉🖥JAVA DATABASE CONNECTIVITY(JDBC)
+
+It commonly used for storing data permenently in database
+
+JDBC plays an intermediate between Frontend and backend
+
+There are mainly 4 components of JDBC
+
+1. JDBC API
+
+jdbc API provide 2 packages for Java database connectivity
+
+It provide 2 packages such as follower
+
+Java.sql.*;
+
+javax.sql.*;
+
+2. JDBC DRIVER
+
+Jdbc uses driver API
+
+Jdbc driver convert program format into a database format
+
+3. JDBC DRIVER MANAGER
+
+jdbc driver manager manager the jdbc driver according to database
+
+4. JDBC TEST SUITE
+
+it load the jdbc driver according to database
+
+👉🖥JDBC ARCHITECHTURE
+
+1. JAVA APPLICATION
+
+2. JDBC API
+
+3. JDBC DRIVER MANAGER
+
+4. DATABASES
+
+👉🖥TYPES OF JDBC DRIVER
+
+There are mainly 4 types of JDBC driver
+
+1. Type 1 driver
+
+2. Type 2 driver
+
+3. Type 3 driver
+
+4. Type 4 driver
+
+Type 4 driver is best driver which direct intract with database
+
+👉🖥STRICTURE OF JDBC PROGRAM
+
+Step 1. Firstly import package related to jdbc
+
+Import java.sql.*;
+
+Step 2. Load specific jdbc driver
+
+Class.forname("String drivername");
+
+Eg. Class.forname("oracle.jdbc.oracledriver");
+Step 3. Establish connection between database and java program
+We have used connection interface
+Connection con=Driver manager.getconnection(database url,username, password);
+Step 4. Prepare query using statement interface
+Statement state=con.createStatement();
+Step 5. Execute query using method
+executeupdate()---- it used for insert update and delete
+executequery() ----- it used for selecting record inside table
+execute()---- it used for all operation
+State.execute("query");
+Step 6. Get and process the result
+Step 7. Closing database connectivity
+Con.close();
+Before creating program we must have to edit envornment variable of JDBC Driver
+
+Created by
+S rahire
+05/April/2025
