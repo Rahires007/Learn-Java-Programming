@@ -1,14 +1,14 @@
 //Constructor Program
 import java.lang.*;
 import java.util.*;
-class Sample
+class Constructor
 {
-    Sample()
+    Constructor()
     {
       System.out.print("\nHello World...");
     }
     public static void main(String [] args)
     {
-        Sample S=new Sample();
+        Constructor Con=new Constructor();
     }
 }
